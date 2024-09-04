@@ -6,19 +6,22 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+
 @Data
 @Entity
 public class Question {
 
-@Id
-@GeneratedValue(strategy = GenerationType.SEQUENCE)
-private Integer id;
-private String questionTitle;
-private String option1;
-private String option2;
-private String option3;
-private String option4;
-private String rightAnswer;
-private String difficultylevel;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    public Integer id;
+    public String questionTitle;
+    public String option1;
+    public String option2;
+    public String option3;
+    public String option4;
+    public String rightAnswer;
+    public String difficultylevel;
+    public String category;
+
 
 }
